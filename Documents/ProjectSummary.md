@@ -11,6 +11,16 @@
    * **Testing**: unit tests are implemented to ensure the production migration is consistent with the notebook outputs.
    * **Deployment**: simple model deployment using FastAPI, streamlit, and uvicorn (WIP).
 
+## dsmodelling Library
+![dsmodelling workflow](../Documents/Screenshots/dsmodelling.jpg)
+
+The `dsmodelling` library is a self-defined python package to standardize and streamline the data science workflow. It provides the functions to cover key data science steps:
+1. **Data Processing**: functions for one hot encoding to prepare data for modelling.
+2. **EDA**: bivariate EDA framework to explore the association between each variable and outcome.
+3. **Modelling**: wrapper functions for model training, algorithm selection, model interpretation, model individual case explanation, hyperparameter tuning
+4. **Deployment**: simple deployment framework using FastAPI and uvicorn.
+
+
 ## Ideal Methodology for Similar Problems
 1. **Crosectional Data**: if more data is available, a crosectional data collection approach should be use to capture customer behavior and future outcome status in a fixed time window. This approach can ensure to form a reliable foundation for estabilishing the association between customer behavior and outcome. 
 2. **Matched Lookback Period**: to ensure the lookback period is matched between churned and non-churned customers, so that the time sensitive features can be properly engineered and interpreted, e.g. the top artists and song for specific time period.

@@ -1,3 +1,4 @@
+# Sparkify Music Streaming Data Analysis
 
 ## Key Files
 
@@ -13,6 +14,7 @@
 
 
 ## Project Structure
+
 ```
 .
 ├── Data # Input data files, gitignored.
@@ -30,14 +32,14 @@
 │   │       └── DataSummary.html # EDA summary report using ydata-profiling, from 03_EDAModelling.ipynb
 │   └── Modelling # modelling outputs
 ├── Production
-│   ├── DataProcessing.py
-│   ├── Modelling.py
-│   └── run.sh
+│   ├── DataProcessing.py # ✅ rerunable
+│   ├── Modelling.py #❗not rerunable due to the use of self-defined `dsmodelling` library
+│   └── run.sh # bash script to run the production pipeline
 ├── README.md
 ├── Scripts
-│   ├── 01_DataUnderstanding.ipynb
-│   ├── 02_DataPreprocessing.ipynb
-│   ├── 03_EDAModelling.ipynb
+│   ├── 01_DataUnderstanding.ipynb # ✅ rerunable
+│   ├── 02_DataPreprocessing.ipynb # ✅ rerunable
+│   ├── 03_EDAModelling.ipynb #❗not rerunable due to the use of self-defined `dsmodelling` library
 │   ├── deployment
 │   │   ├── __pycache__
 │   │   │   └── fastapi_app.cpython-312.pyc
